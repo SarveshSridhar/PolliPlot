@@ -25,7 +25,7 @@ def prediction():
 
 @app.route('/risk', methods = ['POST'])
 def admin():
-    return render_template("index2.html")
+    return render_template("index.html")
     #  gather = request.form["site"]
     #  print(gather)
     #  if (gather == "Pollinator"):
