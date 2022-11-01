@@ -1,0 +1,86 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Colorlib Templates">
+    <meta name="author" content="Colorlib">
+    <meta name="keywords" content="Colorlib Templates">
+
+    <!-- Title Page-->
+    <title>Ecosystem Health Assessment Tool</title>
+
+    <!-- Icons font CSS-->
+    <link href="{{ url_for('static', filename='vendor/font-awesome-4.7/css/font-awesome.min.css') }}" rel="stylesheet"> 
+    <link href="{{ url_for('static', filename='vendor/mdi-font/css/material-design-iconic-font.min.css') }}" rel="stylesheet"> 
+    
+    <!-- Font special for pages-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
+
+    <!-- Vendor CSS-->
+    <link href="{{ url_for('static', filename='vendor/select2/select2.min.css') }}" rel="stylesheet"> 
+
+    <!-- Main CSS-->
+    <link href="{{ url_for('static', filename='css/main.css') }}" rel="stylesheet"> 
+</head>
+<style>
+.card-2 .card-heading {
+    background: url(../static/images/f2.jfif) top left/cover no-repeat!important;
+    width: 35%!important;
+}
+
+.bg-red {
+    background: #13ed33!important;
+}
+</style>
+
+<body>
+    
+    <div class="page-wrapper bg-red p-t-100 p-b-100 font-robo">
+        <div class="wrapper wrapper--w960">
+            <div class="card card-2">
+                <div class="card-heading"></div>
+                <div class="card-body">
+                    <h2 class="title">Ecosystem Health Assessment Tool</h2>
+                    <div class="row row-space">
+                      
+                            <p>In Northern Europe, it is estimated that 75 per cent of all wild-blooming plants depend upon insect pollination, and most of the flowers are pollinated by honeybees and bumblebees. All the crops, fruit trees and wild flowers blooming before midsummer are dependent on visits of bees to be able to
+                                develop their seeds, berries and fruits. The economic value of bee pollination in nature and the great ecological importance of that cannot be counted, but for sure, it must be much greater than the economic value of crop pollination.</p>
+                            <img src="../static/images/forest.jfif" width="450" height="200"  >
+                            <form action="/risk" method="post">
+                                <div align="center" id="mainselection">
+                                  <select name="sites" method="GET" action="/">
+                                    <option selected="selected">Select the Pollinator or Indicators</option>
+                                    {% for site in sites[0:] %}
+                                    <option value="{{site}}">{{site}}</option>
+                                    {% endfor %}
+                                  </select>
+                                </div>
+                                
+                                <button class="btn btn--radius btn--green" type="submit">Submit</button>
+                              </form>
+                           
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Jquery JS-->
+    <script src="{{ url_for('static', filename='vendor/jquery/jquery.min.js') }}" type="text/javascript"></script>
+    <!-- Vendor JS-->
+    <script src="{{ url_for('static', filename='vendor/select2/select2.min.js') }}" type="text/javascript"></script>
+    
+
+    <!-- Main JS-->
+    <script src="{{ url_for('static', filename='js/global.js') }}" type="text/javascript"></script>
+
+</body>
+
+</html>
+<!-- end document-->
+

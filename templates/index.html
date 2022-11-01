@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Colorlib Templates">
+    <meta name="author" content="Colorlib">
+    <meta name="keywords" content="Colorlib Templates">
+
+    <!-- Title Page-->
+    <title>Biodiversity Estimation</title>
+
+    <!-- Icons font CSS-->
+    <link href="{{ url_for('static', filename='vendor/font-awesome-4.7/css/font-awesome.min.css') }}" rel="stylesheet"> 
+    <link href="{{ url_for('static', filename='vendor/mdi-font/css/material-design-iconic-font.min.css') }}" rel="stylesheet"> 
+    
+    <!-- Font special for pages-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
+
+    <!-- Vendor CSS-->
+    <link href="{{ url_for('static', filename='vendor/select2/select2.min.css') }}" rel="stylesheet"> 
+
+    <!-- Main CSS-->
+    <link href="{{ url_for('static', filename='css/main.css') }}" rel="stylesheet"> 
+</head>
+<style>
+.card-2 .card-heading {
+    background: url(../static/images/fin1.jpg) top left/cover no-repeat!important;
+}
+
+.bg-red {
+    background: #13ed33!important;
+}
+</style>
+<body>
+    <div class="page-wrapper bg-red p-t-100 p-b-100 font-robo">
+        <div class="wrapper wrapper--w960">
+            <div class="card card-2">
+                <div class="card-heading"></div>
+                <div class="card-body">
+                    <h2 class="title">Pollinator Species Estimation</h2>
+                    <div class="center">
+                        <centre><h3 class="title">Occurences of two species of pollinators in the Australia Region</h3></centre>
+                        <img src="../static/images/occurenceplot.jpg" width="1000" height="500",Title="Sustainabiity of frog over climatic conditions">
+                    </div>
+                    <div class="center">
+                        <centre><h3 class="title">Occurence of pollinators  over climatic conditions</h3></centre>
+                        <img src="../static/images/dataFrog.jpeg" width="1000" height="500",Title="Sustainabiity of frog over climatic conditions">
+                    </div>
+                    <div class="center">
+                        <centre><h3 class="title">Suitable climatic conditions where polinnators surbives most</h3></centre>
+                        <img src="../static/images/features.JPG" width="1000" height="500",Title="Sustainabiity of frog over climatic conditions">
+                    </div>
+                    <div class="center">
+                        <centre><h3 class="title">Forecast of pollinators over Australia</h3></centre>
+                        <img src="../static/images/predictionFrog.jpeg" width="1000" height="500",title="Forecast of frog over Australia">
+                    </div>
+                    <div class="center">
+                        <centre><h3 class="title">zommed in pollinators Occurence prediction over more data points</h3></centre>
+                        <img src="../static/images/modelop.JPG" width="1000" height="500",Title="Sustainabiity of frog over climatic conditions">
+                    </div>                                 
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Jquery JS-->
+    <script src="{{ url_for('static', filename='vendor/jquery/jquery.min.js') }}" type="text/javascript"></script>
+    <!-- Vendor JS-->
+    <script src="{{ url_for('static', filename='vendor/select2/select2.min.js') }}" type="text/javascript"></script>
+    
+
+    <!-- Main JS-->
+    <script src="{{ url_for('static', filename='js/global.js') }}" type="text/javascript"></script>
+
+</body>
+
+</html>
+<!-- end document-->
